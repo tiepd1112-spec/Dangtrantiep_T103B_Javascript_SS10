@@ -1,11 +1,21 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="UTF-8">
-  <title>Quản lý đội bóng</title>
-</head>
-<body>
 
-  <script src="B1.js"></script>
-</body>
-</html>
+const player = {
+    name: "Messi",
+    position: "Forward",
+    age: 36,
+    goals: 25,
+    assists: 15, 
+};
+
+let showPlayerInfo = (player) => {
+  let total = player.goals + player.assists;
+
+  console.log(`Tên: ${player.name}`);
+     console.log(`Vị trí: ${player.position}`);
+      console.log(`Tuổi: ${player.age}`);
+       console.log(`Bàn thắng mùa này: ${player.goals}`);
+        console.log(`Kiến tạo mùa này: ${player.assists}`);
+       console.log(`Tổng đóng góp: ${total}`);
+};
+
+showPlayerInfo(player);
